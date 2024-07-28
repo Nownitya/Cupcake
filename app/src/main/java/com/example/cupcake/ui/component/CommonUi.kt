@@ -30,6 +30,10 @@ fun FormattedPriceLabelPreview() {
 }
 
 
+/*
+*
+*
+* */
 /*val rupeeFormat = NumberFormat.getCurrencyInstance(Locale("EN", "INDIA"))
     rupeeFormat.currency = Currency.getInstance("INR")
 //    val subtotal = rupeeFormat.format(subtotal.toDouble())
