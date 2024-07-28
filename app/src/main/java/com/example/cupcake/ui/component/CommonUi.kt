@@ -33,6 +33,8 @@ fun FormattedPriceLabelPreview() {
 /*
 *
 *
+*
+*
 * */
 /*val rupeeFormat = NumberFormat.getCurrencyInstance(Locale("EN", "INDIA"))
     rupeeFormat.currency = Currency.getInstance("INR")
