@@ -108,7 +108,7 @@ fun OrderSummaryPreviewDark() {
     CupcakeTheme {
         OrderSummaryScreen(
             orderUiState = OrderUiState(0, "Check", "Check", "₹200.00"),
-            onSendButtonClicked = { subject: String, summary: String -> },
+            onSendButtonClicked = { _: String, _: String -> },
             onCancelButtonClicked = {},
             modifier = Modifier.fillMaxHeight()
         )
@@ -123,7 +123,7 @@ fun OrderSummaryPreviewLight() {
     CupcakeTheme {
         OrderSummaryScreen(
             orderUiState = OrderUiState(0, "Check", "Check", "₹200.00"),
-            onSendButtonClicked = { subject: String, summary: String -> },
+            onSendButtonClicked = { _: String, _: String -> },
             onCancelButtonClicked = {},
             modifier = Modifier.fillMaxHeight()
         )
@@ -136,7 +136,7 @@ fun OrderSummaryPreviewNeutral() {
     CupcakeTheme {
         OrderSummaryScreen(
             orderUiState = OrderUiState(0, "Check", "Check", "₹200.00"),
-            onSendButtonClicked = { subject: String, summary: String -> },
+            onSendButtonClicked = { _: String, _: String -> },
             onCancelButtonClicked = {},
             modifier = Modifier.fillMaxHeight()
         )

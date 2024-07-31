@@ -9,8 +9,7 @@ import kotlinx.coroutines.flow.update
 import java.text.NumberFormat
 import java.text.SimpleDateFormat
 import java.util.Calendar
-import java.util.Currency
-import java.util.Currency.*
+import java.util.Currency.getInstance
 import java.util.Locale
 
 private const val PRICE_PER_CUPCAKE = 20.00
@@ -60,9 +59,13 @@ class OrderViewmodel : ViewModel() {
         if (pickupOptions()[0] == pickupDate) {
             calculatedPrice += PRICE_FOR_SAME_DAY_PICKUP
         }
-//        val formattedPrice = NumberFormat.getCurrencyInstance().format(calculatedPrice)
-        val rupeeFormat = NumberFormat.getCurrencyInstance()
+//       val formattedPrice = NumberFormat.getCurrencyInstance().format(calculatedPrice)
+        /*val rupeeFormat = NumberFormat.getCurrencyInstance()
         rupeeFormat.currency = getInstance("INR")
+        val formattedPrice = rupeeFormat.format(calculatedPrice)*/
+        val rupeeFormat = NumberFormat.getCurrencyInstance().apply {
+            currency = getInstance("INR")
+        }
         val formattedPrice = rupeeFormat.format(calculatedPrice)
         return formattedPrice
     }
